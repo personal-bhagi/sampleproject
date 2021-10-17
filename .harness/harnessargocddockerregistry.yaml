@@ -1,0 +1,14 @@
+connector:
+  name: harness-argocd-docker-registry
+  identifier: harnessargocddockerregistry
+  description:
+  orgIdentifier: default
+  projectIdentifier: HarnessArgoCD
+  type: DockerRegistry
+  spec:
+    dockerRegistryUrl: https://hub.docker.com/u/nagisetty1998
+    providerType: DockerHub
+    auth:
+      type: Anonymous
+    delegateSelectors:
+    - harness-k8s
