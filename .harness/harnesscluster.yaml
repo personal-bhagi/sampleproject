@@ -1,0 +1,19 @@
+connector:
+  name: harness-cluster
+  identifier: harnesscluster
+  description:
+  orgIdentifier: default
+  projectIdentifier: HarnessArgoCD
+  type: K8sCluster
+  spec:
+    credential:
+      type: ManualConfig
+      spec:
+        masterUrl: https://99E9247CD98C95EBBECB29D997F1F426.gr7.ap-south-1.eks.amazonaws.com
+        auth:
+          type: UsernamePassword
+          spec:
+            username: harness-argocd
+            passwordRef: harnessargocdcluster
+    delegateSelectors:
+    - harness-k8s
