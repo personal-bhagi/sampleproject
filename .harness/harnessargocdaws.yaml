@@ -1,0 +1,15 @@
+connector:
+  name: harness-argocd-aws
+  identifier: harnessargocdaws
+  description:
+  orgIdentifier: default
+  projectIdentifier: HarnessArgoCD
+  type: Aws
+  spec:
+    credential:
+      type: ManualConfig
+      spec:
+        accessKey: AKIAZH7UQ7HPLOTQIGPM
+        secretKeyRef: awssecretskey
+    delegateSelectors:
+    - harness-k8s
